@@ -18,6 +18,8 @@ This project includes the following libraries and tools:
 | [Zod](https://zod.dev/)                     | Type-safe schema validation                                    |
 | [React Hook Form](https://react-hook-form.com/) | Performant, flexible forms with validation                     |
 | [Path Aliases](https://vitejs.dev/config/shared-options.html#resolve-alias) | Clean and simplified imports using `@/` notation               |
+| [Pull Request Template](https://docs.github.com/en/github/building-a-strong-community/about-issue-and-pull-request-templates) | Standardized PR checklist for consistent contributions         |
+
 
 ## 🧪 Testing
 
