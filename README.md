@@ -1,69 +1,32 @@
-# React + TypeScript + Vite
+# 🚀 React Vite Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application built with performance and scalability in mind.
 
-Currently, two official plugins are available:
+## 🧰 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project includes the following libraries and tools:
 
-## Expanding the ESLint configuration
+| Tool / Library          | Description                                                      |
+|------------------------|------------------------------------------------------------------|
+| [React](https://reactjs.org/)               | Core library for building user interfaces                      |
+| [Vite](https://vitejs.dev/)                 | Lightning-fast build tool and development server               |
+| [Axios](https://axios-http.com/)            | Promise-based HTTP client for API requests                     |
+| [Redux](https://redux.js.org/)              | State management for global state                              |
+| [@tanstack/react-query](https://tanstack.com/query/latest) | Powerful data fetching and caching for React                   |
+| [Vitest](https://vitest.dev/)               | Vite-native unit test framework                                |
+| [Playwright](https://playwright.dev/)       | End-to-end testing for UI automation                           |
+| [Zod](https://zod.dev/)                     | Type-safe schema validation                                    |
+| [React Hook Form](https://react-hook-form.com/) | Performant, flexible forms with validation                     |
+| [Path Aliases](https://vitejs.dev/config/shared-options.html#resolve-alias) | Clean and simplified imports using `@/` notation               |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧪 Testing
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Unit Testing** with `Vitest` and `@testing-library/react`
+- **E2E Testing** with `Playwright`
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🔧 Development
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Install Dependencies
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+yarn install
